@@ -17,7 +17,14 @@ function Menu(props) {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-    <Navbar color="primary" dark expand="md">
+      <style>
+        {
+          `.menu-custom {
+            background-color: #041370;
+          }`
+        }
+      </style>
+    <Navbar className='menu-custom' dark expand="md">
       <Container>
         <NavbarBrand href="/">Teco</NavbarBrand>
         <NavbarToggler onClick={toggle} />
